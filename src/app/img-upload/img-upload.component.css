@@ -1,0 +1,26 @@
+.form{
+padding: 10vh 10vw 10vh 10vw;
+background-color: white;
+text-align: center;
+width: max-content;
+margin: auto;
+border-radius: 100px;
+}
+
+.container {
+padding-top: 10vh;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-upload {
+  font-size: 5vh;
+}
+
+.upload-btn {
+  transform: scale(1.5);
+  position: relative;
+  bottom: 1vh;
+}

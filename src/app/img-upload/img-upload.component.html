@@ -1,0 +1,25 @@
+<div class="container">
+<div class="form">
+  <input accept="image/*" type="file" class="file-input"
+  (change)="onFileSelected($event)" #fileUpload>
+
+<div class="file-upload">
+
+{{fileName || "No image uploaded yet."}}
+
+<button mat-mini-fab color="primary" class="upload-btn"
+ (click)="fileUpload.click()">
+   <mat-icon>attach_file</mat-icon>
+</button>
+</div>
+<img style="height:40vh" id="img" [src]="this.url">
+<br>
+<div style="width:max-content;margin:auto;" *ngIf="calculating">
+  <h1>Loading...</h1>
+  <mat-spinner></mat-spinner>
+</div>
+<h2>{{this.pre1}}</h2>
+<h2>{{this.pre2}}</h2>
+<h2>{{this.pre3}}</h2>
+</div>
+</div>
